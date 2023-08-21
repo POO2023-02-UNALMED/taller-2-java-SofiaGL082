@@ -6,20 +6,10 @@ public class Asiento {
 	int registro;
 	
 	public void cambiarColor (String color) {
-		switch(color)
+		if (color == "rojo" || color == "verde" || color == "amarillo" || color == "negro" || color == "blanco")
 		{
-		case "rojo": color = "rojo";
-		        break;
-		case "verde": color = "verde";
-		        break;
-		case "amarillo": color = "amarillo";
-		        break;
-		case "negro": color = "negro";
-		        break;
-		case "blanco": color = "blanco";
-		        break;
+			this.color = color;
 		}
 	}
-
 
 }
